@@ -1,3 +1,9 @@
-<p>
-  receipe-item works!
-</p>
+<a href="#" class="list-group-item clearfix" (click) = 'afterSelect()'>
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{r.name}}</h4>
+    <p class="list-group-item-text">{{r.description}}</p>
+  </div>
+  <span class="pull-right">
+      <img [src]="r.imageSrc" alt="" class="image-responsive" style="max-height: 50px; border-radius: 10px;">
+  </span>
+</a>

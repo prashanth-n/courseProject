@@ -1,9 +1,9 @@
-<app-header></app-header>
+<app-header (usrSelected) = 'onUsrClick($event)'></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-11">
-      <app-receipes></app-receipes>
-      <app-shopping-list></app-shopping-list>
+      <app-receipes *ngIf = "loadedNav === 'r'"></app-receipes>
+      <app-shopping-list *ngIf = "loadedNav === 's'"></app-shopping-list>
     </div>
   </div>
 </div>
