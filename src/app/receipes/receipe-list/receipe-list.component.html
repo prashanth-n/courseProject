@@ -5,6 +5,6 @@
 </div>
 <div class="row">
     <div class="col-xs-12">
-        <app-receipe-item *ngFor="let r of recipe" [r] = "r"></app-receipe-item>
+        <app-receipe-item *ngFor="let r of recipe; let i = index" [r] = "r" [index] = "i"></app-receipe-item>
     </div>
 </div>

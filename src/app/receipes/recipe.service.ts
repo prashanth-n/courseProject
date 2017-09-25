@@ -44,6 +44,9 @@ export class RecipeService {
     getRecipe() {
         return this.recipe;
     }
+    getRecipes(index: number) {
+        return this.recipe[index];
+    }
     recipeSelected() {
 
     }
